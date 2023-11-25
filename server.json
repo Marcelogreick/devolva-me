@@ -1,0 +1,130 @@
+{
+  "itens": [
+    {
+      "id": 1,
+      "nomeItem": "Laptop",
+      "classificacao": "Eletrônicos",
+      "emprestadoPara": "João",
+      "dataDeDevolucao": "01/02/2023",
+      "observacoes": "Novo",
+      "entregue": false
+    },
+    {
+      "id": 3,
+      "nomeItem": "Bola de Futebol",
+      "classificacao": "Vestuário",
+      "emprestadoPara": "Carlos",
+      "dataDeDevolucao": "10/04/2023",
+      "observacoes": "Um pouco desgastada",
+      "entregue": true
+    },
+    {
+      "id": 4,
+      "nomeItem": "Livro",
+      "classificacao": "Beleza",
+      "emprestadoPara": "Ana",
+      "dataDeDevolucao": "20/05/2023",
+      "observacoes": "Páginas dobradas",
+      "entregue": true
+    },
+    {
+      "id": 5,
+      "nomeItem": "Fones de Ouvido",
+      "classificacao": "Eletrônicos",
+      "emprestadoPara": "Paulo",
+      "dataDeDevolucao": "05/06/2023",
+      "observacoes": "Funcionando perfeitamente",
+      "entregue": false
+    },
+    {
+      "id": 6,
+      "nomeItem": "Camisa Esportiva",
+      "classificacao": "vestuário",
+      "emprestadoPara": "Fernanda",
+      "dataDeDevolucao": "12/07/2023",
+      "observacoes": "Tamanho grande",
+      "entregue": true
+    },
+    {
+      "id": 8,
+      "nomeItem": "Tablet",
+      "classificacao": "eletrônico",
+      "emprestadoPara": "Lucia",
+      "dataDeDevolucao": "30/09/2023",
+      "observacoes": "Tela quebrada",
+      "entregue": true
+    },
+    {
+      "id": 10,
+      "nomeItem": "Bicicleta",
+      "classificacao": "esportivo",
+      "emprestadoPara": "Gustavo",
+      "dataDeDevolucao": "05/11/2023",
+      "observacoes": "Precisa de manutenção",
+      "entregue": true
+    },
+    {
+      "id": 12,
+      "nomeItem": "Bola",
+      "classificacao": "esportivo",
+      "emprestadoPara": "Gustavo",
+      "dataDeDevolucao": "05/11/2023",
+      "observacoes": "Precisa de manutenção",
+      "entregue": true
+    },
+    {
+      "id": 13,
+      "nomeItem": "Chuteira",
+      "classificacao": "esportivo",
+      "emprestadoPara": "Gustavo",
+      "dataDeDevolucao": "05/11/2023",
+      "observacoes": "Precisa de manutenção",
+      "entregue": true
+    },
+    {
+      "id": 14,
+      "nomeItem": "Taco",
+      "classificacao": "Esportivo",
+      "emprestadoPara": "Gustavo",
+      "dataDeDevolucao": "05/11/2023",
+      "observacoes": "Precisa de manutenção",
+      "entregue": false
+    },
+    {
+      "id": 15,
+      "nomeItem": "Luvas de Boxe",
+      "classificacao": "esportivo",
+      "emprestadoPara": "Gustavo",
+      "dataDeDevolucao": "05/11/2023",
+      "observacoes": "Precisa de manutenção",
+      "entregue": true
+    },
+    {
+      "id": 16,
+      "nomeItem": "Bike",
+      "classificacao": "esportivo",
+      "emprestadoPara": "Gustavo",
+      "dataDeDevolucao": "05/11/2023",
+      "observacoes": "Precisa de manutenção",
+      "entregue": true
+    },
+    {
+      "id": 3686008685,
+      "nomeItem": "fffff",
+      "classificacao": "Livros",
+      "emprestadoPara": "fffff",
+      "dataDeDevolucao": "24/11/2023",
+      "observacoes": "fffff",
+      "entregue": false
+    },
+    {
+      "id": 919586256,
+      "nomeItem": "Moto Fazer",
+      "classificacao": "Automóveis",
+      "emprestadoPara": "Jonatas",
+      "dataDeDevolucao": "30/11/2023",
+      "observacoes": "",
+      "entregue": false
+    }
+  ]
+}
