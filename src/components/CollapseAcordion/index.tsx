@@ -34,6 +34,7 @@ interface AcordionProps {
   id: number;
   onConfirmDelete: (id: number) => void;
   onConfirmEntrega: (id: number) => void;
+  onFinished?: () => void;
 }
 export function CollapseAcordion({
   title,
@@ -47,6 +48,7 @@ export function CollapseAcordion({
   onConfirmDelete,
   onConfirmEntrega,
   id,
+  onFinished,
 }: AcordionProps) {
   const { navigate }: NavigationProp<ParamListBase> = useNavigation();
   const [expanded, setExpanded] = useState(false);
@@ -148,7 +150,9 @@ export function CollapseAcordion({
         title="Confirmação"
         paragraph={`Deseja realmente excluir o item ${title}?`}
         confirmText="Confirmar"
-        onConfirm={() => (onConfirmDelete(id), setShowDialog(false))}
+        onConfirm={() => (
+          onConfirmDelete(id), onFinished(), setShowDialog(false)
+        )}
         onCancel={() => {
           setShowDialog(false);
         }}
@@ -159,7 +163,9 @@ export function CollapseAcordion({
         title="Confirmação"
         paragraph={`Deseja realmente confirmar a entrega do item ${title}?`}
         confirmText="Confirmar"
-        onConfirm={() => (onConfirmEntrega(id), setShowDialogEntrega(false))}
+        onConfirm={() => (
+          onConfirmEntrega(id), onFinished(), setShowDialogEntrega(false)
+        )}
         onCancel={() => {
           setShowDialogEntrega(false);
         }}

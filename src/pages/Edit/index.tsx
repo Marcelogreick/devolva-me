@@ -86,8 +86,8 @@ export function Edit({ route }) {
     Toast.show({
       type: "success",
       position: "top",
-      text1: "Cadastro",
-      text2: "Item cadastrado com sucesso 👋",
+      text1: "Atualizado",
+      text2: "Item atualizado com sucesso 👋",
     });
 
     navigate("Home");

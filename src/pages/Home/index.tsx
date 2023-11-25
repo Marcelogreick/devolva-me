@@ -13,7 +13,7 @@ import {
   List,
   Logo,
 } from "./styles";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import api from "../../services/api";
 import { CheckBox } from "../../components/CheckBox";
 import Toast from "react-native-toast-message";
@@ -21,6 +21,7 @@ import { ItemProps } from "../../@types/itemProps";
 import {
   NavigationProp,
   ParamListBase,
+  useFocusEffect,
   useNavigation,
 } from "@react-navigation/native";
 import { Button } from "../../components/Button";
@@ -33,8 +34,10 @@ export function Home() {
   const [total, setTotal] = useState(0);
   const [itens, setItens] = useState<ItemProps[]>([]);
   const [filter, setFilter] = useState<Filter>("all");
+  const [loading, setLoading] = useState(false);
 
   const getItens = async () => {
+    setLoading(true);
     if (filter === "all") {
       const response = await api.get(`/itens?_page=${page}&_limit=5`);
       const totalCount = response.headers["x-total-count"];
@@ -65,6 +68,8 @@ export function Home() {
       setItens(response.data);
       setTotal(totalPages);
     }
+
+    return setLoading(false);
   };
 
   const handleDelete = async (id: number) => {
@@ -96,6 +101,12 @@ export function Home() {
   useEffect(() => {
     getItens();
   }, [page, filter]);
+
+  useFocusEffect(
+    useCallback(() => {
+      getItens();
+    }, [page, filter])
+  );
 
   return (
     <Container>
@@ -136,6 +147,7 @@ export function Home() {
               id={item.id}
               onConfirmDelete={handleDelete}
               onConfirmEntrega={handleConfirm}
+              onFinished={() => getItens()}
             />
           )}
         />

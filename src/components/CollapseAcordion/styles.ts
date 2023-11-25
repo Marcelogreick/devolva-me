@@ -45,13 +45,13 @@ export const Line = styled.View`
 `;
 
 export const TitleLine = styled.Text`
-  font-size: ${RFValue(15)}px;
+  font-size: ${RFValue(14)}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
   color: ${({ theme }) => theme.COLORS.GRAY_700};
 `;
 
 export const TextLine = styled.Text`
-  font-size: ${RFValue(15)}px;
+  font-size: ${RFValue(14)}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
   color: ${({ theme }) => theme.COLORS.PRIMARY};
   text-transform: capitalize;

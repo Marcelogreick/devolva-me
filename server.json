@@ -31,7 +31,7 @@
       "id": 5,
       "nomeItem": "Fones de Ouvido",
       "classificacao": "Eletrônicos",
-      "emprestadoPara": "Paulo",
+      "emprestadoPara": "Paulos",
       "dataDeDevolucao": "05/06/2023",
       "observacoes": "Funcionando perfeitamente",
       "entregue": false
@@ -82,15 +82,6 @@
       "entregue": true
     },
     {
-      "id": 14,
-      "nomeItem": "Taco",
-      "classificacao": "Esportivo",
-      "emprestadoPara": "Gustavo",
-      "dataDeDevolucao": "05/11/2023",
-      "observacoes": "Precisa de manutenção",
-      "entregue": false
-    },
-    {
       "id": 15,
       "nomeItem": "Luvas de Boxe",
       "classificacao": "esportivo",
@@ -110,7 +101,7 @@
     },
     {
       "id": 3686008685,
-      "nomeItem": "fffff",
+      "nomeItem": "Codes",
       "classificacao": "Livros",
       "emprestadoPara": "fffff",
       "dataDeDevolucao": "24/11/2023",
@@ -125,6 +116,23 @@
       "dataDeDevolucao": "30/11/2023",
       "observacoes": "",
       "entregue": false
+    },
+    {
+      "id": 1781865346,
+      "nomeItem": "Caneta",
+      "classificacao": "Esportivo",
+      "emprestadoPara": "Pedro",
+      "dataDeDevolucao": "30/11/2023",
+      "entregue": true
+    },
+    {
+      "id": 3861013217,
+      "nomeItem": "Livros",
+      "classificacao": "Livros",
+      "emprestadoPara": "Pris",
+      "dataDeDevolucao": "30/11/2023",
+      "observacoes": "kkk",
+      "entregue": true
     }
   ]
 }
